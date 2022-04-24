@@ -16,4 +16,15 @@
     <dimen name="textSize_2xl">28sp</dimen>
     <dimen name="textSize_3xl">32sp</dimen>
 
+    <!-- Offset -->
+    <dimen name="common_offset_xxs">4dp</dimen>
+    <dimen name="common_offset_xs">8dp</dimen>
+    <dimen name="common_offset_s">12dp</dimen>
+    <dimen name="common_offset_m">16dp</dimen>
+    <dimen name="common_offset_l">20dp</dimen>
+    <dimen name="common_offset_xl">24dp</dimen>
+    <dimen name="common_offset_2xl">28dp</dimen>
+    <dimen name="common_offset_3xl">32dp</dimen>
+    <dimen name="common_offset_4xl">40dp</dimen>
+    <dimen name="common_offset_5xl">44dp</dimen>
 </resources>

@@ -9,7 +9,8 @@ buildscript {
     }
     dependencies {
         classpath globalDependencies.androidGradlePlugin
-        classpath globalDependencies.kotlinGradlePlugin
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.21"
+        classpath globalDependencies.hiltAndroidPlugin
     }
 }
 

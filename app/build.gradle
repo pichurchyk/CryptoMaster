@@ -2,6 +2,7 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
 }
 
 android {
@@ -30,12 +31,26 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    buildFeatures {
+        viewBinding true
+    }
 }
 
 dependencies {
-
+//    Common
     implementation globalDependencies.coreKtx
     implementation appDependencies.material
     implementation appDependencies.constraintLayout
+    implementation appDependencies.fragmentKtx
+    implementation appDependencies.activityKtx
+    implementation appDependencies.lifecycleViewmodelKtx
+    implementation appDependencies.lifecycleJava8
 
+//    Hilt
+    implementation globalDependencies.hiltAndroid
+    kapt globalDependencies.hiltAndroidCompiler
+
+//    Navigation Components
+    implementation appDependencies.navigationFragmentKtx
+    implementation appDependencies.navigationUiKtx
 }
